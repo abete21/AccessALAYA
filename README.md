@@ -7,7 +7,7 @@
 ---
 
 ## Revision History
-- **2.03 (2026‑06‑14)** – First English release. Fixed English modules and manuals.  
+- **2.03 (2026‑06‑14)** – First release of English version. Translated the message and explanatory document.  
 - **2.00 (2026‑05‑29)** – Started English version development.  
 - **1.20 (2025‑04‑29)** – Added class modules for form controls and composite key support.  
 - **1.12 (2024‑03‑30)** – Added SQL loop definitions and external macro commands.  
