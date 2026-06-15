@@ -1,0 +1,121 @@
+# Access ALAYA – Framework for Multi‑User Microsoft Access Applications  
+**Version 2.03**  
+**Author:** abete21  
+**Website:** https://accessalaya.jp  
+**Contact:** AccessALAYA@gmail.com  
+
+---
+
+## Revision History
+- **2.03 (2026‑06‑14)** – First English release. Fixed English modules and manuals.  
+- **2.00 (2026‑05‑29)** – Started English version development.  
+- **1.20 (2025‑04‑29)** – Added class modules for form controls and composite key support.  
+- **1.12 (2024‑03‑30)** – Added SQL loop definitions and external macro commands.  
+- **1.10 (2023‑09‑02)** – Added standard form generation feature.  
+- **1.09 (2023‑08‑26)** – Introduced installer module.  
+
+---
+
+## Overview
+**Access ALAYA** is a framework designed to make Microsoft Access safe and stable for **multi‑user environments**.
+
+Access is a powerful tool for small‑scale database applications, offering the simplicity of Excel with the structure of a relational database.  
+However, Access was originally designed for **single‑user or very small teams**, and running it with many users under default settings often leads to file corruption or instability.
+
+Access ALAYA solves these issues and enables **dozens of concurrent users** to safely operate an Access‑based system.
+
+In the author's production environment, ALAYA has been running **100 registered users** with **around 30 concurrent logins**, operating **over a year without maintenance**.
+
+---
+
+## Key Features
+
+### **Multi‑User Ready**
+ALAYA is designed from the ground up for multi‑user operation.  
+No additional tuning is required later—your system is multi‑user capable from day one.
+
+### **Low‑Code Development**
+Common functions are provided as reusable libraries, reducing the amount of VBA code you need to write.  
+This improves readability, maintainability, and development speed.
+
+### **Versioning & Deployment Management**
+Frequent updates are essential for end‑user applications.  
+ALAYA includes built‑in mechanisms for:
+- Module updates  
+- Version control  
+- Automated distribution to end users  
+
+---
+
+## System Requirements
+- **Windows 10 or later**  
+- **Microsoft Access (32‑bit or 64‑bit)**  
+  - Verified on Access 2013 and later  
+  - Avoids Windows‑specific system calls for maximum compatibility  
+- **Note:** Access is not included in Microsoft Office for Mac, so ALAYA does not run on macOS.
+
+---
+
+## Included Files (ZIP Package Structure)
+ZipRoot
+├─ README.md            ← English version (this file)
+├─ README_JP.md         ← Japanese version
+└─ AccessALAYA/
+├─ ALAYAMenu/
+│   ├─ ALAYA Menu**.accdb     ← Main GUI module
+│   ├─ ALAYA Menu.rel         ← Release definition file
+│   ├─ StartALAYA.vbs         ← Startup script (versioning & deployment)
+│   ├─ PrivateDB/             ← Local module DB (empty in v2.03)
+│   └─ xlTemplate/            ← Excel template folder (empty in v2.03)
+│
+├─ ALAYADB/
+│   └─ .accdb               ← Sample shared tables
+│
+├─ BackupDB/                  ← Backup folder (empty for installation)
+│
+├─ Starting AccessALAYA/
+│   └─ Starting AccessALAYA.pptx  ← Getting started guide
+│
+└─ ALAYA Installer/
+└─ ALAYA Installer.accdb    ← Installer (use the highest version)
+
+
+---
+
+## Installation
+1. Place the ALAYA package on a **file server**.  
+2. Run the latest **ALAYA Installer** (`ALAYA Installer**.accdb`) from the installer folder.  
+3. The installer will deploy the ALAYA system to the server.
+
+---
+
+## Uninstallation
+ALAYA does **not** write to the Windows registry.  
+To uninstall, simply delete the deployed project folder from the file server.
+
+---
+
+## How to Use
+- Start ALAYA **via the startup script**, not by opening the GUI `.accdb` directly.  
+- A `.vbs` startup script is automatically generated in the menu module folder.  
+- Distribute **shortcuts to the script** to end users.
+
+---
+
+## License
+- Free for **personal use**, **academic use**, and other **non‑commercial purposes**.  
+- Commercial use, redistribution, or secondary use requires a license agreement.  
+- You may use ALAYA freely for evaluation, but if you continue using it for more than **3 months**, please contact the author.
+
+Licensed users receive priority support.
+
+---
+
+## Support & Contact
+For questions, please use the official Q&A forum:  
+https://accessalaya.jp/alaya-qa/
+
+For other inquiries:  
+**AccessALAYA@gmail.com**
+
+---
