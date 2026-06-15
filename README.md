@@ -117,11 +117,9 @@ To uninstall, simply delete the deployed project folder from the file server.
 ---
 
 ## License
-- Free for **personal use**, **academic use**, and other **non‑commercial purposes**.  
-- Commercial use, redistribution, or secondary use requires a license agreement.  
-- You may use ALAYA freely for evaluation, but if you continue using it for more than **3 months**, please contact the author.
-
-Licensed users receive priority support.
+- Access ALAYA is free for **personal use** and **academic use**.  
+- Commercial use requires a license agreement.  
+- See the LICENSE file for full term.
 
 ---
 
