@@ -7,7 +7,7 @@
 ---
 
 ## Revision History
-- **2.03 (2026‑06‑14)** – First English release. Fixed English modules and manuals.  
+- **2.03 (2026‑06‑14)** – First release of English version. Translated the message and explanatory document.  
 - **2.00 (2026‑05‑29)** – Started English version development.  
 - **1.20 (2025‑04‑29)** – Added class modules for form controls and composite key support.  
 - **1.12 (2024‑03‑30)** – Added SQL loop definitions and external macro commands.  
@@ -56,29 +56,43 @@ ALAYA includes built‑in mechanisms for:
 
 ---
 
-## Included Files (ZIP Package Structure)
-ZipRoot
-├─ README.md            ← English version (this file)
-├─ README_JP.md         ← Japanese version
-└─ AccessALAYA/
-├─ ALAYAMenu/
-│   ├─ ALAYA Menu**.accdb     ← Main GUI module
-│   ├─ ALAYA Menu.rel         ← Release definition file
-│   ├─ StartALAYA.vbs         ← Startup script (versioning & deployment)
-│   ├─ PrivateDB/             ← Local module DB (empty in v2.03)
-│   └─ xlTemplate/            ← Excel template folder (empty in v2.03)
-│
-├─ ALAYADB/
-│   └─ .accdb               ← Sample shared tables
-│
-├─ BackupDB/                  ← Backup folder (empty for installation)
-│
-├─ Starting AccessALAYA/
-│   └─ Starting AccessALAYA.pptx  ← Getting started guide
-│
-└─ ALAYA Installer/
-└─ ALAYA Installer.accdb    ← Installer (use the highest version)
+## 📦 Included Files (ZIP Package Structure)
 
+The release archive `AccessALAYA2.03.zip` contains the following folders and files:
+
+- AccessALAYA/
+  - README.md — English version of this document  
+  - README_JP.md — Japanese version of this document  
+  - docs/
+    - Starting AccessALAYA.pptx — Getting started guide  
+  - sample/
+    - ReadMe.md — Sample application description  
+  - src/
+    - ALAYA Installer/ — Installer modules  
+      - ALAYA Installer1.01.accdb  
+      - ALAYA Installer1.02.accdb  
+      - ALAYA Installer1.03.accdb — Latest installer version  
+    - ALAYADB/ — Sample shared tables  
+      - Membership.accdb  
+      - SchedIndex.accdb  
+      - Schedule.accdb  
+      - Tasks.accdb  
+    - ALAYAMenu/ — Main GUI module and related files  
+      - ALAYA Menu**.accdb — Main user interface module  
+      - ALAYA Menu.rel — Release definition file  
+      - StartALAYA.vbs — Startup script for versioning and deployment  
+      - PrivateDB/ — Local module DB folder (empty in v2.03)  
+      - xlTemplate/ — Excel template folder (empty in v2.03)  
+    - DBBackup/ — Backup folder (empty for installation)
+
+Each folder corresponds to a component of the Access ALAYA framework:
+
+- **src/** — Core framework modules and installer  
+- **sample/** — Demonstration application  
+- **docs/** — Documentation and setup guide  
+- **README.md / README_JP.md** — English and Japanese overview files  
+
+After extracting the ZIP, open the sample application in Microsoft Access to explore the framework.
 
 ---
 
