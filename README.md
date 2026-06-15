@@ -59,7 +59,7 @@ ALAYA includes built‑in mechanisms for:
 ## 📦 Included Files (ZIP Package Structure)
 
 The release archive `AccessALAYA2.03.zip` contains the following folders and files:
-...
+
 AccessALAYA/
 ┣ README.md        ← English version of this document
 ┣ README_JP.md     ← Japanese version of this document
@@ -69,28 +69,27 @@ AccessALAYA/
 ┃
 ┣ sample/
 ┃ ┗ ReadMe.md ← Sample application description
-┃...
+┃
 ┗ src/
 ┣ ALAYA Installer/ ← Installer modules
 ┃ ┣ ALAYA Installer1.01.accdb
 ┃ ┣ ALAYA Installer1.02.accdb
 ┃ ┗ ALAYA Installer1.03.accdb ← Latest installer version
-┃...
+┃
 ┣ ALAYADB/ ← Sample shared tables
 ┃ ┣ Membership.accdb
 ┃ ┣ SchedIndex.accdb
 ┃ ┣ Schedule.accdb
 ┃ ┗ Tasks.accdb
-┃...
+┃
 ┣ ALAYAMenu/ ← Main GUI module and related files
 ┃ ┣ ALAYA Menu**.accdb ← Main user interface module
 ┃ ┣ ALAYA Menu.rel ← Release definition file
 ┃ ┣ StartALAYA.vbs ← Startup script for versioning and deployment
 ┃ ┣ PrivateDB/ ← Local module DB folder (empty in v2.03)
 ┃ ┗ xlTemplate/ ← Excel template folder (empty in v2.03)
-┃...
+┃
 ┗ DBBackup/ ← Backup folder (empty for installation)
-...
 
 Each folder corresponds to a component of the Access ALAYA framework:
 - **src/** — Core framework modules and installer  
