@@ -119,7 +119,7 @@ To uninstall, simply delete the deployed project folder from the file server.
 ## License
 - Access ALAYA is free for **personal use** and **academic use**.  
 - Commercial use requires a license agreement.  
-- See the LICENSE file for full term.
+- See the LICENSE file for full terms.
 
 ---
 
