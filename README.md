@@ -60,6 +60,23 @@ ALAYA includes built‑in mechanisms for:
 
 The release archive `AccessALAYA2.03.zip` contains the following folders and files:
 
+---
+
+### ⚠️ Important: Startup Script Provided as `.txt`
+
+To prevent GitHub from misclassifying the project as VBScript,  
+the startup script is included as:
+
+**`Start ALAYA v3.txt`**
+
+Before using ALAYA, please rename this file to:
+
+**`Start ALAYA v3.vbs`**
+
+This script is required for versioning and automatic deployment.
+
+---
+
 - AccessALAYA/
   - README.md — English version of this document  
   - README_JP.md — Japanese version of this document  

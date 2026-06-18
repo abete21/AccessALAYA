@@ -81,30 +81,47 @@ Access ALAYA はこの問題を解決し、
 
 リリースパッケージ `AccessALAYA2.03.zip` には以下が含まれます。
 
+---
+
+### ⚠️ 重要：起動スクリプトは `.txt` として同梱されています
+
+GitHub の言語判定（Linguist）の都合により、  
+起動スクリプトは次の名前で同梱しています：
+
+**`Start ALAYA v3.txt`**
+
+ご利用の際は、以下のように **拡張子を `.vbs` に変更**してから実行してください。
+
+**`Start ALAYA v3.vbs`**
+
+このスクリプトは、バージョン管理および自動配布に必要なファイルです。
+
+---
+
 - **AccessALAYA/**
   - README.md — 英語版説明  
   - README_JP.md — 日本語版説明  
-  - **docs/**
+  - docs/
     - Starting AccessALAYA.pptx — はじめての利用ガイド  
-  - **sample/**
-    - ReadMe.md — サンプルアプリ説明  
-  - **src/**
-    - **ALAYA Installer/** — インストーラモジュール  
+  - sample/
+    - ReadMe.md — サンプルアプリの説明  
+  - src/
+    - ALAYA Installer/ — インストーラモジュール  
       - ALAYA Installer1.01.accdb  
       - ALAYA Installer1.02.accdb  
-      - ALAYA Installer1.03.accdb（最新版）  
-    - **ALAYADB/** — サンプル共有テーブル  
+      - ALAYA Installer1.03.accdb — 最新版インストーラ  
+    - ALAYADB/ — サンプル共有テーブル  
       - Membership.accdb  
       - SchedIndex.accdb  
       - Schedule.accdb  
       - Tasks.accdb  
-    - **ALAYAMenu/** — メイン GUI モジュール  
-      - ALAYA Menu**.accdb — ユーザインタフェース  
+    - ALAYAMenu/ — メイン GUI モジュールおよび関連ファイル  
+      - ALAYA Menu**.accdb — メインユーザインタフェース  
       - ALAYA Menu.rel — リリース定義ファイル  
-      - StartALAYA.vbs — 起動スクリプト（バージョン管理・配布管理）  
-      - PrivateDB/ — ローカル DB（v2.03 は空）  
-      - xlTemplate/ — Excel テンプレート（v2.03 は空）  
-    - **DBBackup/** — バックアップ用（インストール時は空）
+      - StartALAYA.vbs — バージョン管理・配布管理用の起動スクリプト  
+      - PrivateDB/ — ローカルモジュール用 DB フォルダ（v2.03 では空）  
+      - xlTemplate/ — Excel テンプレートフォルダ（v2.03 では空）  
+    - DBBackup/ — バックアップ用フォルダ（インストール時は空）
 
 ZIP を展開後、`sample` フォルダ内のアプリを Access で開くと  
 ALAYA フレームワークの動作を確認できます。
